@@ -1,0 +1,28 @@
+A project dedicated to mirroring the architecture I'm pursuing in my research group at Northeastern University's EAI. Using an Autoencoder to access latent representations as well as to decode them, and a LDM model to generate new latent spaces from random noise to then generate new digit images. At this point what's left of this project is to tidy up some loose ends and let it train for even longer, so I think I'm putting a pin in it to move on to other projects. Here's a project roadmap and remaining to-do list:
+
+Plan: to build a conditioned LDM model to generate hand-drawn digits.
+
+Roadmap:
+
+    Imports
+    Data collection and preprocessing
+    Buidling the AutoEncoder
+        At least one ResNet block in Encoder
+        At least one TConv layer in Decoder
+        See good performance in training
+        See strong class seperation in tSNE
+    Construct dataset of latent representations
+    Build a denoising UNet and training loop
+        Skip connections and residual skip connections
+        Resnet and transpose resnet blocks
+        Self attention heads
+    Train and show off results!
+
+To-do list:
+
+    Fix early stopping
+    Tidy up Autoencoder
+    General clarification and tidying up
+        Fix early stopping function
+    Double check that model parameter saving and loading is working well
+    De-overkill the UNet?
