@@ -1,0 +1,12 @@
+A project to create an AI framework in python using only Numpy. 
+
+Features:
+* linear layers
+* Batch Normalization
+* ReLU, LeakyReLU, and Softmax activations
+* SGD and ADAM optimizers
+
+Demo: 
+
+Demonstrated the framework by building and training an MNIST digit classifier with only my Numpy framework. 
+PyTorch was not used. Torch Vision was only used to access the MNIST images easily. 
