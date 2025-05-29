@@ -1,0 +1,14 @@
+A project to demonstrate RAG (retreival-augmented generation), supervised fine tuning, prompt engineering, and concept erasure techniques. 
+
+Idea: A detective (played by TinyLLaMA from Huggingface) arrives at the office 
+to find his desk covered in documentation about a case he can't remember. The detective has in fact witnessed the crime, 
+but cannot recall what he saw or other common crime fighting facts. 
+It is the users job to interact with the detective to help him remember and ultimately solve the case. 
+
+Features:
+* TinyLLaMA
+* Huggingface transformers, tokenizers, etc
+* RAG with chroma vector database of detective documents
+* Supervised fine-tuning to give the detective a classic film-noir vibe
+* Concept erasure from local TinyLLaMA model
+* Prompt engineering to reinfoce above effects
