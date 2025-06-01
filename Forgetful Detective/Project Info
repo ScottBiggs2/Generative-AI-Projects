@@ -1,14 +1,17 @@
-A project to demonstrate RAG (retreival-augmented generation), supervised fine tuning, prompt engineering, and concept erasure techniques. 
+A project to demonstrate RAG (retreival-augmented generation), supervised fine tuning, prompt engineering, and concept erasure techniques in an LLM. 
 
-Idea: A detective (played by TinyLLaMA from Huggingface) arrives at the office 
-to find his desk covered in documentation about a case he can't remember. The detective has in fact witnessed the crime, 
-but cannot recall what he saw or other common crime fighting facts. 
-It is the users job to interact with the detective to help him remember and ultimately solve the case. 
+Idea: 
+A detective (played by TinyLLaMA from Huggingface or LLaMA 3.2 1B in the final version) and the player collaborate to solve a murder mystery in the English countryside, 
+in the style of Agatha Christies Hercule Poirot mysteries. The model will be fine tuned to have an amiable personality and be familiar with the cast and setting.
+The clues will be gradually discovered by the player as they chat with the detective (model) and stored as documents for RAG. 
+The twist is that the model is edited to forget the key character (perpetrator), so the player will need to solve the case on their own to win. 
+Bonus points if they can convince/explain/remind the model so it can solve the crime as well. 
 
 Features:
-* TinyLLaMA
+* TinyLLaMA, LLaMA 3.2 1B
 * Huggingface transformers, tokenizers, etc
 * RAG with chroma vector database of detective documents
-* Supervised fine-tuning to give the detective a classic film-noir vibe
-* Concept erasure from local TinyLLaMA model
+* Supervised fine-tuning to give the detective an Agatha Christie
+* Concept erasure with CAV and ROME
 * Prompt engineering to reinfoce above effects
+* Streamlit app UI
