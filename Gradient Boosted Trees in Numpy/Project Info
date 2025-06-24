@@ -1,0 +1,11 @@
+A project to create a gradient boosted decision tree framework in python using only Numpy. 
+
+Features:
+* classical gradient boosted trees for classification and regression tasks from only numpy
+* additional optimizations with histogram splitting, BFS, and vectorized tree traversal.
+
+Demo: 
+
+Comparisons on regression (california housing) and classification (breast cancer) against XGBoost,
+LGBM, and Scikit-Learn packaged models.
+
